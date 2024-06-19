@@ -358,7 +358,7 @@ if __name__ == "__main__":
         if os.environ['BILI_COOKIE'] == "":
             print("未填写哔哩哔哩账号密码或COOKIE取消运行")
             exit(0)
-
+    sendNotify.send(title = u"github哔哩哔哩签到开始",msg = 'github.com/QIWEB/qiweb_Clouds-My-Actions')
     if BILI_COOKIE == "":
         b = Bilibili()
         login = b.login(username=os.environ['BILI_USER'], password=os.environ['BILI_PASS'])
